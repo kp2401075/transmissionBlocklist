@@ -6,3 +6,4 @@ curl -s https://www.iblocklist.com/lists.php \
   | xargs wget -O - \
   | gunzip \
   | cat >> blocklist
+mv blocklist ~/.config/transmission/blocklists/blocklist.bin
